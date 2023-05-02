@@ -5,3 +5,21 @@
     box-sizing: border-box;
 }
 
+#contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+
+}
+
+#contenitore div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% / 10) - 10px);
+    height: 150px;
+    margin: 5px;
+    background-color: aqua;
+    
+    
+}
