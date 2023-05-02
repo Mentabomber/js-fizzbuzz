@@ -9,43 +9,36 @@ let counter, message;
 const contenitore = document.getElementById("contenitore");
 
 
-for (let index = 1;  index <= 100; index++){
+for (let i = 1;  i <= 100; i++){
+ 
     const quadrato = document.createElement('div');
 
-    quadrato.append(index);
-
-    contenitore.append(quadrato);
-    
-}
-
-// for di prova 
-
-for (let i = 0; i >= 3; i++){
-    
-    console.log(i);
-}
-
-for (let i = 1; i >= 100; i++){
-    let message;
-    console.log(message);
-    if (i % 3 == 0 && i % 5 == 0){
+    if (i % 3 == 0 && i % 5 == 0) {
         message = "FizzBuzz";
         console.log(message);
+        quadrato.classList.add("red");
         
     }
     else if ( i % 3 == 0 && i % 5 != 0){
         message = "Fizz";
         console.log(message);
+        quadrato.classList.add("green");
     }
     else if ( i % 5 == 0 && i % 3 != 0){
         message = "Buzz";
         console.log(message);
+        quadrato.classList.add("yellow");
     }
     else{
         message = i;
         console.log(message);
+        quadrato.classList.add("teal");
     }
-console.log(i);    
-}
 
+    
+
+    quadrato.append(message);
+
+    contenitore.append(quadrato);
+}
 

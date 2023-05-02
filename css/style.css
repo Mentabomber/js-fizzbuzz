@@ -18,8 +18,20 @@
     align-items: center;
     width: calc((100% / 10) - 10px);
     height: 150px;
-    margin: 5px;
+    margin: 5px;  
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.teal{
     background-color: aqua;
-    
-    
 }
