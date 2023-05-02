@@ -5,11 +5,16 @@
     box-sizing: border-box;
 }
 
+main{
+    padding: 100px;
+}
+main,
+#contenitore{
+    background-color: rgb(8,59,76);
+}
 #contenitore{
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
-
 }
 
 #contenitore div{
