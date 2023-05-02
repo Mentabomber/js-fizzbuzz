@@ -9,15 +9,23 @@ let counter, message;
 const contenitore = document.getElementById("contenitore");
 
 
-for(let index = 1;  index <= 100; index++){
+for (let index = 1;  index <= 100; index++){
     const quadrato = document.createElement('div');
 
     quadrato.append(index);
 
     contenitore.append(quadrato);
+    
 }
 
-for(let i = 1; i >= 100; i++){
+// for di prova 
+
+for (let i = 0; i >= 3; i++){
+    
+    console.log(i);
+}
+
+for (let i = 1; i >= 100; i++){
     let message;
     console.log(message);
     if (i % 3 == 0 && i % 5 == 0){
@@ -25,12 +33,12 @@ for(let i = 1; i >= 100; i++){
         console.log(message);
         
     }
-    else if ( i % 3 == 0){
+    else if ( i % 3 == 0 && i % 5 != 0){
         message = "Fizz";
         console.log(message);
     }
-    else if ( i % 5 == 0){
-        message = "Fizz";
+    else if ( i % 5 == 0 && i % 3 != 0){
+        message = "Buzz";
         console.log(message);
     }
     else{
