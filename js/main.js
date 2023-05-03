@@ -13,18 +13,18 @@ for (let i = 1;  i <= 100; i++){
  
     const quadrato = document.createElement('div');
 
-    if (i % 3 == 0 && i % 5 == 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         message = "FizzBuzz";
         console.log(message);
         quadrato.classList.add("red");
         
     }
-    else if ( i % 3 == 0 && i % 5 != 0){
+    else if ( i % 3 === 0 ){
         message = "Fizz";
         console.log(message);
         quadrato.classList.add("green");
     }
-    else if ( i % 5 == 0 && i % 3 != 0){
+    else if ( i % 5 === 0 ){
         message = "Buzz";
         console.log(message);
         quadrato.classList.add("yellow");
@@ -34,8 +34,6 @@ for (let i = 1;  i <= 100; i++){
         console.log(message);
         quadrato.classList.add("teal");
     }
-
-    
 
     quadrato.append(message);
 
